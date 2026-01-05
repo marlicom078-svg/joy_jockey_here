@@ -30,7 +30,17 @@ body{font-family:Arial,sans-serif}
   .card{transition:.3s}
   .card:hover{transform:translateY(-6px);box-shadow:0 15px 35px rgba(0,0,0,.15)}
 
-  .logo-img{height:42px}
+  .logo-img{
+    height:48px;
+    width:auto;
+    object-fit:contain;
+    background:#fff;
+    padding:6px;
+    border-radius:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,.2);
+  }
+
+
   .hero-logo{width:120px;max-width:40vw}
 
   .floating-wa{
@@ -219,9 +229,14 @@ body{font-family:Arial,sans-serif}
 
 <textarea id="notes" class="form-control mb-3" placeholder="Catatan"></textarea>
 
-<div id="qrisBox" class="d-none text-center">
-  <img src="qris.jpeg" width="220">
-  <p id="totalText" class="fw-bold text-primary mt-2"></p>
+<div id="qrisBox" class="d-none">
+  <div class="d-flex justify-content-center">
+    <div class="card p-3 text-center shadow-sm">
+      <img src="qris.jpeg" width="220" class="mx-auto mb-2">
+      <p class="small text-muted mt-2">Scan QRIS untuk pembayaran</p>
+      <p id="totalText" class="fw-bold text-primary mb-0"></p>
+    </div>
+  </div>
 </div>
 
 <button class="btn btn-primary w-100 mt-3">Kirim ke WhatsApp</button>
