@@ -1,0 +1,12 @@
+{
+  "name": "JOY JOCKEY HERE",
+  "short_name": "JOY JOCKEY",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1d4ed8",
+  "icons": [
+    { "src": "assets/jjh.jpeg", "sizes": "192x192", "type": "image/jpeg" },
+    { "src": "assets/jjh.jpeg", "sizes": "512x512", "type": "image/jpeg" }
+  ]
+}
